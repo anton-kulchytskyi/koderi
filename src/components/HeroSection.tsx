@@ -11,7 +11,7 @@ function HeroSection() {
     <div className="relative h-screen w-full bg-gray-100 flex justify-center items-center">
       <div className="absolute inset-0 overflow-hidden">
         <motion.img
-          src="/hero.jpg"
+          src="/koderi/hero.jpg"
           alt="Hero Image"
           className="object-cover w-full h-full"
           initial="initial"
