@@ -9,20 +9,20 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Kodari — веб-студія',
-  description: 'Молода команда розробників, яка створює сайти та веб-застосунки з душею. Kodari — code with character.',
-  keywords: ['Kodari', 'веб-студія', 'розробка сайтів', 'Next.js', 'UI/UX', 'дизайн', 'pet-проєкт', 'розробники Україна'],
+  title: 'Koderi — веб-студія',
+  description: 'Молода команда розробників, яка створює сайти та веб-застосунки з душею. Koderi — code with character.',
+  keywords: ['Koderi', 'веб-студія', 'розробка сайтів', 'Next.js', 'UI/UX', 'дизайн', 'pet-проєкт', 'розробники Україна'],
   openGraph: {
-    title: 'Kodar — веб-студія',
+    title: 'Koderi — веб-студія',
     description: 'Молода команда розробників, яка створює сайти та веб-застосунки з душею.',
-    url: 'https://kodari.dev', // замінити на реальну адресу
-    siteName: 'Kodar',
+    url: 'https://anton-kulchytskyi.github.io/koderi/', // замінити на реальну адресу
+    siteName: 'Koderi',
     images: [
       {
-        url: 'https://kodari.dev/og.png', // додайти зображення
+        url: 'https://anton-kulchytskyi.github.io/koderi/og.png',
         width: 1200,
         height: 630,
-        alt: 'Kodari — code with character',
+        alt: 'Koderi — code with character',
       },
     ],
     locale: 'uk_UA',
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kodari — веб-студія',
+    title: 'Koderi — веб-студія',
     description: 'Ми створюємо веб-рішення з любов’ю до коду та дизайну.',
-    images: ['https://kodari.dev/og.png'],
+    images: ['https://anton-kulchytskyi.github.io/koderi/og.png'],
   },
   robots: {
     index: true,
