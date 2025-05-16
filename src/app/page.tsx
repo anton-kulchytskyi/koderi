@@ -1,103 +1,78 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import LandingSection from "@/components/LandingSection";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Header />
+      <HeroSection />
+      <LandingSection
+          id="ваш-старт"
+          title="Ваш Старт у Цифровому Світі"
+          backgroundStyle={{ backgroundColor: '#f0f0f0' }}
+        >
+          {/* Контент секції "Ваш Старт" */}
+          <p>Ласкаво просимо до нашої молодої та амбітної вебстудії!</p>
+        </LandingSection>
+        <LandingSection
+        id="про-нас"
+        title="Молоді. Амбітні. Креативні."
+        backgroundStyle={{ backgroundColor: '#e0e0e0' }}
+      >
+        <p className="text-lg text-gray-700">
+          Ми - команда талановитих розробників та дизайнерів, обєднаних спільною пристрастю до веб-технологій та бажанням створювати інноваційні рішення.
+        </p>
+        {/* Додайте тут інформацію про вашу команду, цінності тощо */}
+      </LandingSection>
+      <LandingSection
+        id="наші-послуги"
+        title="Весь Спектр Веб-Рішень"
+        backgroundStyle={{ backgroundColor: '#f8f8f8' }}
+      >
+        <ul className="list-disc pl-6 text-lg text-gray-700">
+          <li>Розробка веб-сайтів будь-якої складності</li>
+          <li>UI/UX дизайн, що запамятовується</li>
+          <li>SEO-оптимізація для залучення клієнтів</li>
+          <li>Підтримка та обслуговування веб-проектів</li>
+        </ul>
+        {/* Додайте тут детальний опис ваших послуг */}
+      </LandingSection>
+      <LandingSection
+        id="чому-обирають-нас"
+        title="Ваш Успіх - Наша Головна Мета"
+        backgroundStyle={{ backgroundColor: '#d0d0d0' }}
+      >
+        <ul className="list-disc pl-6 text-lg text-gray-700">
+          <li>Індивідуальний підхід до кожного клієнта</li>
+          <li>Використання сучасних технологій та трендів</li>
+          <li>Прозорість на кожному етапі розробки</li>
+          <li>Підтримка після запуску проекту</li>
+        </ul>
+        {/* Додайте тут ваші ключові переваги */}
+      </LandingSection>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <LandingSection
+        id="пет-проект"
+        title="Наш Потенціал у Дії"
+        backgroundStyle={{ backgroundColor: '#f0f8ff' }}
+      >
+        <p className="text-lg text-gray-700">
+          Ознайомтеся з нашим пет-проектом, який демонструє наші навички та підхід до розробки. Хоча він ще в процесі, ви вже можете оцінити наш рівень.
+        </p>
+        {/* Додайте тут опис та, можливо, скріншоти вашого пет-проекту */}
+      </LandingSection>
+
+      <LandingSection
+        id="контакти"
+        title="Зв'яжіться з Нами"
+        backgroundStyle={{ backgroundColor: '#e8f5e9' }}
+      >
+        <p className="text-lg text-gray-700">
+          Готові обговорити ваш проект? Залиште заявку або звяжіться з нами зручним для вас способом!
+        </p>
+        {/* Додайте тут контактну форму або контактну інформацію */}
+      </LandingSection>
+    </>
   );
 }
